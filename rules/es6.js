@@ -14,14 +14,11 @@ module.exports = {
   rules: {
     // enforces no braces where they can be omitted
     // https://eslint.org/docs/rules/arrow-body-style
-    // TODO: enable requireReturnForObjectLiteral?
-    'arrow-body-style': ['error', 'as-needed', {
-      requireReturnForObjectLiteral: false,
-    }],
+    'arrow-body-style': 'off',
 
     // require parens in arrow function arguments
     // https://eslint.org/docs/rules/arrow-parens
-    'arrow-parens': ['error', 'always'],
+    'arrow-parens': 'off',
 
     // require space before/after arrow function's arrow
     // https://eslint.org/docs/rules/arrow-spacing
@@ -62,8 +59,7 @@ module.exports = {
 
     // Disallow specified names in exports
     // https://eslint.org/docs/rules/no-restricted-exports
-    // TODO enable, semver-minor, once eslint v7 is required (which is major)
-    'no-restricted-exports': ['off', {
+    'no-restricted-exports': ['error', {
       restrictedNamedExports: [
         'default', // use `export default` to provide a default export
         'then', // this will cause tons of confusion when your module is dynamically `import()`ed
@@ -102,26 +98,26 @@ module.exports = {
 
     // require method and property shorthand syntax for object literals
     // https://eslint.org/docs/rules/object-shorthand
-    'object-shorthand': ['error', 'always', {
+    'object-shorthand': ['warn', 'always', {
       ignoreConstructors: false,
       avoidQuotes: true,
     }],
 
     // suggest using arrow functions as callbacks
-    'prefer-arrow-callback': ['error', {
+    'prefer-arrow-callback': ['warn', {
       allowNamedFunctions: false,
       allowUnboundThis: true,
     }],
 
     // suggest using of const declaration for variables that are never modified after declared
-    'prefer-const': ['error', {
+    'prefer-const': ['warn', {
       destructuring: 'any',
       ignoreReadBeforeAssign: true,
     }],
 
     // Prefer destructuring from arrays and objects
     // https://eslint.org/docs/rules/prefer-destructuring
-    'prefer-destructuring': ['error', {
+    'prefer-destructuring': ['warn', {
       VariableDeclarator: {
         array: false,
         object: true,
@@ -136,7 +132,7 @@ module.exports = {
 
     // disallow parseInt() in favor of binary, octal, and hexadecimal literals
     // https://eslint.org/docs/rules/prefer-numeric-literals
-    'prefer-numeric-literals': 'error',
+    'prefer-numeric-literals': 'warn',
 
     // suggest using Reflect methods where applicable
     // https://eslint.org/docs/rules/prefer-reflect
@@ -144,15 +140,15 @@ module.exports = {
 
     // use rest parameters instead of arguments
     // https://eslint.org/docs/rules/prefer-rest-params
-    'prefer-rest-params': 'error',
+    'prefer-rest-params': 'warn',
 
     // suggest using the spread operator instead of .apply()
     // https://eslint.org/docs/rules/prefer-spread
-    'prefer-spread': 'error',
+    'prefer-spread': 'warn',
 
     // suggest using template literals instead of string concatenation
     // https://eslint.org/docs/rules/prefer-template
-    'prefer-template': 'error',
+    'prefer-template': 'warn',
 
     // disallow generator functions that do not have yield
     // https://eslint.org/docs/rules/require-yield
@@ -164,7 +160,7 @@ module.exports = {
 
     // import sorting
     // https://eslint.org/docs/rules/sort-imports
-    'sort-imports': ['off', {
+    'sort-imports': ['warn', {
       ignoreCase: false,
       ignoreDeclarationSort: false,
       ignoreMemberSort: false,

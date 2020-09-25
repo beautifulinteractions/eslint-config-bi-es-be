@@ -14,7 +14,7 @@ module.exports = {
 
     // Disallow await inside of loops
     // https://eslint.org/docs/rules/no-await-in-loop
-    'no-await-in-loop': 'error',
+    'no-await-in-loop': 'off',
 
     // Disallow comparisons to negative zero
     // https://eslint.org/docs/rules/no-compare-neg-zero
@@ -40,8 +40,7 @@ module.exports = {
 
     // Disallow duplicate conditions in if-else-if chains
     // https://eslint.org/docs/rules/no-dupe-else-if
-    // TODO: enable, semver-major
-    'no-dupe-else-if': 'off',
+    'no-dupe-else-if': 'error',
 
     // disallow duplicate keys when creating object literals
     'no-dupe-keys': 'error',
@@ -64,13 +63,7 @@ module.exports = {
 
     // disallow unnecessary parentheses
     // https://eslint.org/docs/rules/no-extra-parens
-    'no-extra-parens': ['off', 'all', {
-      conditionalAssign: true,
-      nestedBinaryExpressions: false,
-      returnAssign: false,
-      ignoreJSX: 'all', // delegate to eslint-plugin-react
-      enforceForArrowConditionals: false,
-    }],
+    'no-extra-parens': 'off',
 
     // disallow unnecessary semicolons
     'no-extra-semi': 'error',
@@ -79,8 +72,7 @@ module.exports = {
     'no-func-assign': 'error',
 
     // https://eslint.org/docs/rules/no-import-assign
-    // TODO: enable, semver-minor, once eslint v6.4 is required (which is a major)
-    'no-import-assign': 'off',
+    'no-import-assign': 'error',
 
     // disallow function or variable declarations in nested blocks
     'no-inner-declarations': 'error',
@@ -93,8 +85,7 @@ module.exports = {
 
     // Disallow Number Literals That Lose Precision
     // https://eslint.org/docs/rules/no-loss-of-precision
-    // TODO: enable, semver-minor, once eslint v7.1 is required (which is major)
-    'no-loss-of-precision': 'off',
+    'no-loss-of-precision': 'error',
 
     // Disallow characters which are made with multiple code points in character class syntax
     // https://eslint.org/docs/rules/no-misleading-character-class
@@ -105,8 +96,7 @@ module.exports = {
 
     // Disallow returning values from Promise executor functions
     // https://eslint.org/docs/rules/no-promise-executor-return
-    // TODO: enable, semver-minor, once eslint v7.3 is required (which is major)
-    'no-promise-executor-return': 'off',
+    'no-promise-executor-return': 'error',
 
     // disallow use of Object.prototypes builtins directly
     // https://eslint.org/docs/rules/no-prototype-builtins
@@ -117,8 +107,7 @@ module.exports = {
 
     // Disallow returning values from setters
     // https://eslint.org/docs/rules/no-setter-return
-    // TODO: enable, semver-major (altho the guide forbids getters/setters already)
-    'no-setter-return': 'off',
+    'no-setter-return': 'error',
 
     // disallow sparse arrays
     'no-sparse-arrays': 'error',
@@ -132,14 +121,11 @@ module.exports = {
     'no-unexpected-multiline': 'error',
 
     // disallow unreachable statements after a return, throw, continue, or break statement
-    'no-unreachable': 'error',
+    'no-unreachable': 'off',
 
     // Disallow loops with a body that allows only one iteration
     // https://eslint.org/docs/rules/no-unreachable-loop
-    // TODO: enable, semver-minor, once eslint v7.3 is required (which is major)
-    'no-unreachable-loop': ['off', {
-      ignore: [], // WhileStatement, DoWhileStatement, ForStatement, ForInStatement, ForOfStatement
-    }],
+    'no-unreachable-loop': 'error',
 
     // disallow return/throw/break/continue inside finally blocks
     // https://eslint.org/docs/rules/no-unsafe-finally
@@ -151,8 +137,7 @@ module.exports = {
 
     // Disallow useless backreferences in regular expressions
     // https://eslint.org/docs/rules/no-useless-backreference
-    // TODO: enable, semver-minor, once eslint v7 is required (which is major)
-    'no-useless-backreference': 'off',
+    'no-useless-backreference': 'error',
 
     // disallow negation of the left operand of an in expression
     // deprecated in favor of no-unsafe-negation

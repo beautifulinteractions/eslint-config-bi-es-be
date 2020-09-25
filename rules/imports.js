@@ -111,7 +111,6 @@ module.exports = {
 
     // No Node.js builtin modules
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-nodejs-modules.md
-    // TODO: enable?
     'import/no-nodejs-modules': 'off',
 
     // Style guide:
@@ -153,7 +152,7 @@ module.exports = {
 
     // Require modules with a single export to use a default export
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
-    'import/prefer-default-export': 'error',
+    'import/prefer-default-export': 'off',
 
     // Restrict which files can be imported in a given folder
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-restricted-paths.md
@@ -161,11 +160,11 @@ module.exports = {
 
     // Forbid modules to have too many dependencies
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/max-dependencies.md
-    'import/max-dependencies': ['off', { max: 10 }],
+    'import/max-dependencies': ['warn', { max: 10 }],
 
     // Forbid import of modules using absolute paths
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-absolute-path.md
-    'import/no-absolute-path': 'error',
+    'import/no-absolute-path': 'warn',
 
     // Forbid require() calls with expressions
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-dynamic-require.md

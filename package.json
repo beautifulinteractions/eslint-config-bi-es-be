@@ -1,11 +1,11 @@
 {
-  "name": "bi-eslint-es-be",
+  "name": "eslint-config-bi-es-be",
   "version": "0.0.1",
   "description": "Beautiful Interactions' base ES ESLint config",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/beautifulinteractions/bi-eslint-es-be"
+    "url": "https://github.com/beautifulinteractions/bi-eslint-es-be.git"
   },
   "keywords": [
     "eslint",
