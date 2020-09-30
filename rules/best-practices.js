@@ -124,7 +124,7 @@ module.exports = {
 
     // disallow implicit type conversions
     // https://eslint.org/docs/rules/no-implicit-coercion
-    'no-implicit-coercion': 'warn',
+    'no-implicit-coercion': 'error',
 
     // disallow var and named functions in global scope
     // https://eslint.org/docs/rules/no-implicit-globals
