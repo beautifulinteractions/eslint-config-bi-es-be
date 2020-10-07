@@ -160,12 +160,7 @@ module.exports = {
 
     // import sorting
     // https://eslint.org/docs/rules/sort-imports
-    'sort-imports': ['warn', {
-      ignoreCase: false,
-      ignoreDeclarationSort: false,
-      ignoreMemberSort: false,
-      memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-    }],
+    'sort-imports': 'off',
 
     // require a Symbol description
     // https://eslint.org/docs/rules/symbol-description
